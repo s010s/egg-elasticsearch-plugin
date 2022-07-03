@@ -1,0 +1,52 @@
+{
+  "name": "egg-elasticsearch-plugin",
+  "version": "1.0.2",
+  "description": "an egg plugin for @elastic/elasticsearch",
+  "main": "app.js",
+  "module": "app.js",
+  "typings": "index.d.ts",
+  "files": [
+    "app",
+    "config",
+    "app.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "clear": "rm -rf app && rm -rf config && rm -rf app.js",
+    "build": "yarn clear && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s010s/egg-elasticsearch-plugin.git"
+  },
+  "keywords": [
+    "egg",
+    "plugin",
+    "elasticsearch",
+    "@elastic/elasticsearch",
+    "typescript",
+    "ts"
+  ],
+  "eggPlugin": {
+    "name": "elasticsearch"
+  },
+  "author": "leonleung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s010s/egg-elasticsearch-plugin/issues"
+  },
+  "homepage": "https://github.com/s010s/egg-elasticsearch-plugin#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.16.0",
+    "assert": "^2.0.0",
+    "egg": "^2.33.1"
+  }
+}
